@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Resume in JSON Format
+        let JsonObj = {
+            "Name": "Keerthana",
+            "EmailID": "keerthana123 @gmail.com",
+            "Phone": "8332092765",
+            "Career Objective": "To secure a challenging position in a progressive organization, where my skills can be enhanced and contribute to the organization success as well as my personal growth.",
+            "Education": {
+                "Higher Education ": "Bachelor of Engineering",
+                "College ": "JNTUA",
+                "Specialization": "CSE"
+            },
+
+            "Skills": {
+                "Database": ["MYSQL", "MongoDB"],
+                "Programming Languages": ["HTML", "CSS", "JavaScript"]
+            },
+            "Key Strengths": ["Quick Learner", "Hard Working", "Good Team Player"],
+            "Declarations": "The above mentioned details are true"
+        }
+        let jsonStr = JSON.stringify(JsonObj)
+        let result = JSON.parse(jsonStr)
+        console.log(result)
+
+    </script>
+</body>
+
+</html>

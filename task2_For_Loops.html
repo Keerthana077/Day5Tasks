@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let student = [{
+            "id": "1",
+            "name": "alex",
+            "gender": "male"
+        },
+        {
+            "id": "2",
+            "name": "john",
+            "gender": "male"
+        },
+        {
+            "id": "3",
+            "name": "marie",
+            "gender": "female"
+        }];
+
+        //for loop
+        console.log("Iteration using For loop :")
+        for (let i = 0; i < student.length; i++) {
+            let obj = student[i];
+
+            console.log(obj.id + " " + obj.name);
+        }
+
+        //for in loop
+        console.log("Iteration using For in loop :")
+
+        for (let key in student) {
+            console.log(student[key].id + " " + student[key].name);
+        }
+
+
+        //for of loop
+        console.log("Iteration using For of loop :")
+
+        for (let x of student) {
+            console.log(x.id + " " + x.name);
+        }
+
+        // for each loop
+        console.log("Iteration using For each loop :")
+
+        student.forEach(function (obj) { console.log(obj.id + " " + obj.name); });
+
+    </script>
+</body>
+
+</html>
